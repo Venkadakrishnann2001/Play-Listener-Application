@@ -4,7 +4,8 @@
   "description": "",
   "main": "touch server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+"start":"nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +22,8 @@
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-jwt": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
