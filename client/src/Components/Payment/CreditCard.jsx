@@ -53,7 +53,7 @@ export const CreditCard = () => {
     console.log("heloo",state.name,price,state.email);
 
     try {
-      const response = await axios.post('http://localhost:3000/updatepayment', { email: state.email, name: state.name , price });
+      const response = await axios.post('https://play-listener-application-server.onrender.com/updatepayment', { email: state.email, name: state.name , price });
       console.log(response.data.message); // Log the success message
       // Handle success scenario (e.g., show a success message to the user)
     setTimeout(() => {

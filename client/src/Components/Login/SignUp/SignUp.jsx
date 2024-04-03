@@ -146,7 +146,7 @@ const Signup = () => {
     if (username && email && password) {
       try {
         // console.log("check");
-        const response = await axios.post("http://localhost:3000/signup", {
+        const response = await axios.post("https://play-listener-application-server.onrender.com/signup", {
           username,
           email,
           password,

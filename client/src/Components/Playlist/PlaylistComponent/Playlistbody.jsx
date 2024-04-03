@@ -130,7 +130,7 @@ const PlaylistBody = () => {
  const toast = useToast();
  const createPlaylist = async () => {
   try {
-      const response = await axios.post("http://localhost:3000/addPlaylist", {
+      const response = await axios.post("https://play-listener-application-server.onrender.com/addPlaylist", {
           title: userInput.title,
           description: userInput.description,
           img: userInput.img,
